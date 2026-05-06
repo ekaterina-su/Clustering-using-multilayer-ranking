@@ -95,9 +95,6 @@ class CitationRelevanceAnalyzer:
             if citing_embedding is None:
                 continue
 
-            # Получаем цитируемые работы
-            # В реальных данных нужно получить список цитируемых работ
-            # Пока используем заглушку - нужно будет адаптировать под ваши данные
             cited_works = self.get_cited_works(paper)
 
             for cited_work_id in cited_works:
