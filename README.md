@@ -31,3 +31,11 @@ Influence Matrix → Transitive Closure → Hierarchical Clustering
 ↓
 
 Threshold Rules → Suspected Pairs
+## Установка
+
+```bash
+git clone https://github.com/ekaterina-su/clustering-multilayer-ranking.git
+cd clustering-multilayer-ranking
+python -m venv venv
+source venv/bin/activate  # или venv\Scripts\activate на Windows
+pip install -r requirements.txt
