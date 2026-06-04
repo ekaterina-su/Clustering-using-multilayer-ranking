@@ -21,10 +21,13 @@
 OpenAlex JSON → Abstract Extractor → SBERT Embeddings → Semantic Validation
 
 ↓
+
 Author Citation Graph → CIDRE → Anomalous Groups
 
 ↓
+
 Influence Matrix → Transitive Closure → Hierarchical Clustering
 
 ↓
+
 Threshold Rules → Suspected Pairs
