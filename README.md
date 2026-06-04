@@ -34,8 +34,8 @@ Threshold Rules → Suspected Pairs
 ## Установка
 
 ```bash
-git clone https://github.com/ekaterina-su/clustering-multilayer-ranking.git
-cd clustering-multilayer-ranking
+git clone https://github.com/ekaterina-su/Сlustering-using-multilayer-ranking.git
+cd Сlustering-using-multilayer-ranking
 python -m venv venv
 source venv/bin/activate  # или venv\Scripts\activate на Windows
 pip install -r requirements.txt
