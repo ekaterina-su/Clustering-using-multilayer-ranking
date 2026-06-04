@@ -18,10 +18,13 @@
    с помощью SBERT-эмбеддингов
 
 ## Архитектура
-OpenAlex JSON → Abstract Extractor → SBERT Embeddings → Semantic Validation/n
-↓/n
-Author Citation Graph → CIDRE → Anomalous Groups/n
-↓/n
-Influence Matrix → Transitive Closure → Hierarchical Clustering/n
-↓/n
-Threshold Rules → Suspected Pairs/n
+OpenAlex JSON → Abstract Extractor → SBERT Embeddings → Semantic Validation
+
+↓
+Author Citation Graph → CIDRE → Anomalous Groups
+
+↓
+Influence Matrix → Transitive Closure → Hierarchical Clustering
+
+↓
+Threshold Rules → Suspected Pairs
