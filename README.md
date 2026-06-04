@@ -76,7 +76,7 @@ pip install -r requirements.txt
 }
 ```
 ## Запуск методов
-1. Пороговый алгоритм
+1. **Пороговый алгоритм**
 ```bash
 python -c "
 from src.detection.threshold import CitationCartelDetector
@@ -86,7 +86,7 @@ v2 = detector.detect_cartels_v2(threshold=5)
 print(f'Сценарий 1 (не соавторы): {len(v1)} пар')
 print(f'Сценарий 2 (соавторы): {len(v2)} пар')
 ```
-2. Адаптированный CIDRE
+2. **Адаптированный CIDRE**
 ```bash
 python -c "
 from src.detection.cidre import AuthorCIDRE
@@ -100,7 +100,7 @@ analyzer.save_results(groups, 'author_citation_cartels.json')
 print(f'Найдено аномальных групп: {len(groups)}')
 "
 ```
-3. Иерархическая кластеризация
+3. **Иерархическая кластеризация**
 ```bash
 python -c "
 from src.detection.hierarchical import CitationCartelDetector, CartelFinder
@@ -114,7 +114,7 @@ detector.save_clusters_to_file('clusters_hierarchical.txt')
 print(f'Найдено кластеров: {len(clusters)}')
 "
 ```
-4. Семантическая валидация
+4. **Семантическая валидация**
 ```bash
 # Шаг 1: извлечь абстракты
 python -c "
@@ -135,7 +135,7 @@ suspicious = analyzer.analyze_citation_relevance(threshold=0.4)
 print(f'Найдено подозрительных цитирований: {len(suspicious)}')
 "
 ```
-5. Анализ пересечений
+5. **Анализ пересечений**
 ```bash
 python -c "
 from src.utils.overlap import count_works_in_suspicious_file, print_detailed_analysis
@@ -148,7 +148,7 @@ print_detailed_analysis(results)
 ```
 Быстрый запуск всех методов
 ```bash
-# Запустить всё по очереди
+# Запустить все по очереди
 python src/detection/threshold.py
 python src/detection/cidre.py
 python src/detection/hierarchical.py
